@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.container
+    h2= title
+    p Got any questions you would like to ask? Submit your question here to get an answer.
+  div.container
+    form(method="post", action="/create", class="ask-form")
+      div.form-group
+        label(for="username") Name
+        input(type="text", name="username", placeholder="Enter your name", id="username")
+      div.form-group
+        label(for="question") Question
+        textarea(id="question", name="question", placeholder="Enter your question")
+      button(type="submit", id="submit" class="btn btn-submit") Submit

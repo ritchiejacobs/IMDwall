@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    nav.site-nav
+      a.site-nav-logo(href="../") 
+        span imd
+        | wall
+      button.site-nav-ask Ask a question
+    block content
+    footer
+      ul
+        li 
+          a(href="../") home
+        li 
+          a(href="/ask") ask
+        li 
+          a(href="/questions") questions
+        li
+          a(href="/moderate") login
+    block scripts
+      script(src='/faye/client.js')
+      script(src='/js/main.js')

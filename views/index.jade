@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div.container.ask
+    form(method="post", action="/create" class="ask-form-invert")
+      div.form-group
+        label(for="username") Name
+        input(id="username", type="text", name="username", placeholder="Enter your name")
+      div.form-group
+        label(for="question") Question
+        textarea(id="question", name="question", placeholder="Enter your question")
+      button(class="btn btn-submit" type="submit") Submit
+  div.ask-container
+    div.container
+      h2 All questions
+      p An overview of all questions. Upvote the questions you want answered or downvote the questions you dislike.
+    ul.list-group#questions
+      each val in questions
+        li(class="list-group-item", id=""+val._id+"")
+          div.list-group-item-question
+            span.username= val.username 
+            span.description  asked a question:
+            span.question= val.question
+          div.list-group-item-vote
+            button.btn.voteUp vote up
+            span.badge= val.votes
+            button.btn.voteDown vote down

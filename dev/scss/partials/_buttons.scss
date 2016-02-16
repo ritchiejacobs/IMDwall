@@ -1,0 +1,48 @@
+button:focus
+{
+	outline: 0;
+}
+
+.btn
+{
+	background-color: $btn-default-bg;
+	border-color: $btn-default-border;
+	border-radius: $border-radius;
+	border-style: solid;
+	border-width: 1px;
+	color: $btn-default-color;
+	display: inline-block;
+	padding: $padding;
+}
+
+.btn:hover
+{
+	background-color: darken($btn-default-bg, 5%);
+	border-color: darken($btn-default-border, 10%);
+}
+
+.btn-submit
+{
+	background-color: $btn-submit-bg;
+	border-color: $btn-submit-border;
+	color: $btn-submit-color;
+}
+
+.btn-submit:hover
+{
+	background-color: darken($btn-submit-bg, 5%);
+	border-color: darken($btn-submit-border, 10%);
+}
+
+.btn-danger
+{
+	background-color: $btn-danger-bg;
+	border-color: $btn-danger-border;
+	color: $btn-danger-color;
+}
+
+.btn-danger:hover
+{
+	background-color: darken($btn-danger-bg, 5%);
+	border-color: darken($btn-danger-border, 10%);
+}

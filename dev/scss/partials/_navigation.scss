@@ -1,0 +1,61 @@
+.site-nav
+{
+	background-color: $header-bg;
+	text-align: center;
+	overflow: hidden;
+
+	.site-nav-logo
+	{
+		color: $header-color;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+		font-size: $font-size-logo;
+		font-weight: bold;
+		line-height: $font-size-logo;
+		padding: 0 30px;
+		text-decoration: none;
+		letter-spacing: 2px;
+
+		@media only screen and (min-width: 720px)
+		{
+			float: left;
+		}
+
+		span
+		{
+			border: 1px solid $color-primary;
+			border-radius: 5px;
+			font-weight: lighter;
+			margin: 5px;
+			padding: 0 5px;
+		}
+	}
+
+	.site-nav-ask
+	{
+		background-color: darken($color-primary, 5%);
+		border: none;
+		color: #ffffff;
+		display: block;
+		font-size: $font-size-logo/1.8;
+		font-weight: bold;
+		line-height: $font-size-logo*1.8;
+		padding: 0 30px;
+		width: 100%;
+
+		@media only screen and (min-width: 720px) 
+		{
+			float: right;
+			width: auto;
+		}
+	}
+
+	.site-nav-ask:hover
+	{
+		background-color: #ccc;
+	}
+}
+
+.ask
+{
+	background-color: $color-primary;
+}

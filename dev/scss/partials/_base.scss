@@ -1,0 +1,53 @@
+*, 
+*:before, 
+*:after 
+{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: 	border-box; 
+	box-sizing: 		border-box;
+}
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	background-color: $body-bg;
+	color: $color-text;
+	font-family: $font-family;
+	min-height: 100%;
+	position: relative;
+}
+
+.container
+{
+	padding: 20px;
+	overflow: hidden;
+
+	@media only screen and (min-width: 720px)
+	{
+		h1, h2, p
+		{
+			text-align: center;
+		}
+		
+	}
+}
+
+.ask-container
+{
+	text-align: center;
+}
+
+h1, h2, p
+{
+	margin: 10px auto;
+	max-width: 450px;
+}
+
+p
+{
+	line-height: 1.3em;
+}

@@ -1,0 +1,109 @@
+.list-group
+{
+	list-style: none;
+	margin: 0 0 50px;
+	padding: 0;
+	overflow: hidden;
+	min-height: 100%;
+	display: inline-block;
+}
+
+.list-group-item
+{
+	clear: left;
+	display: block;
+	float: left;
+	padding: 10px;
+
+	@media only screen and (min-width: 720px)
+	{
+		width: 720px;
+		max-width: 720px;
+	}
+}
+
+.list-group-item:hover
+{
+	background-color: lighten($color-primary, 50%);
+}
+
+.list-group-item-question
+{
+	background-color: $color-primary;
+	border-radius: 30px;
+	display: block;
+	padding: 18px 26px;
+	text-align: left;
+
+	@media only screen and (min-width: 720px)
+	{
+		float: left;
+		max-width: 500px;
+	}
+
+	.username
+	{
+		color: darken($color-primary, 25%);
+		font-weight: bold;
+	}
+
+	.description
+	{
+		color: darken($color-primary, 22.5%);
+	}
+
+	.question
+	{
+		border-left: 5px solid darken($color-primary, 8%);
+		color: #fff;
+		display: block;
+		font-size: 1.2em;
+		font-style: italic;
+		font-weight: bold;
+		margin: 10px 0 0 10px;
+		padding: 8px 0 8px 14px;
+	}
+}
+
+.list-group-item-vote
+{
+	display: block;
+	margin: 10px 30px;
+	text-align: left;
+
+	@media only screen and (min-width: 720px)
+	{
+		float: right;
+		margin-left: 10px;
+
+		.btn
+		{
+			display: block;
+		}
+	}
+}
+
+.badge
+{
+	background-color: #999;
+	border-radius: 10px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 1;
+	margin: 5px 10px;
+	min-width: 10px;
+	padding: 3px 7px;
+}
+
+.list-group-moderate
+{
+	.question-moderate
+	{
+		color: #fff;
+	}
+
+	.badge, .delete
+	{
+		display: inline-block;
+	}
+}

@@ -1,0 +1,41 @@
+// Colors
+$color-primary: #6f5499;
+$color-logo: #ffffff;
+$color-text: #333333;
+
+// Text
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-logo: 2.6em;
+
+// Blocks
+$body-bg: #fff;
+
+$header-bg: lighten($color-primary, 50%);
+$header-color: $color-primary;
+
+$ask-bg: $color-primary;
+$ask-color: #fff;
+$ask-font-size: 2em;
+
+// Components
+$border-radius: 4px;
+$padding: 6px 12px;
+
+$btn-default-color: $color-text;
+$btn-default-bg: #ffffff;
+$btn-default-border: #cccccc;
+
+$btn-danger-color: #ffffff;
+$btn-danger-bg: #d9534f;
+$btn-danger-border: #d43f3a;
+
+$btn-submit-color: #ffffff;
+$btn-submit-bg: darken($color-primary, 10%);
+$btn-submit-border: darken($btn-submit-bg, 5%);
+
+$input-color: $color-text;
+$input-bg: #ffffff;
+$input-border: $color-primary;
+
+$input-ask-color: #fff;
+$input-ask-border: darken($color-primary, 6%);

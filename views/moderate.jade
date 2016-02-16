@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div.container
+    h2= title
+    p Manage all current questions. Only accessible to authorized users.
+  div.container.ask-container
+    if isLoggedIn
+      ul.list-group.list-group-moderate#moderate
+        each val in questions
+          li(class="list-group-item", id=""+val._id+"")
+            div.list-group-item-question
+              span.username= val.username 
+              | : 
+              span.question-moderate= val.question
+            div.list-group-item-vote
+              span.badge= val.votes
+              button.btn.btn-danger.delete delete
+    else
+      form(method="post", action="/moderate", class="login-form")
+        div.form-group
+          label(for="username") Username
+          input(type="text", name="username", id="username", value=""+username+"")
+        div.form-group
+          label(for="password") Password
+          input(type="password", name="password", id="password")
+        button(type="submit", id="submit", class="btn btn-submit") Sign in
